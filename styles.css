@@ -156,7 +156,6 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-bottom: 2vh;
     padding-left: 5%;
 }
 
@@ -241,13 +240,13 @@ button {
 }
 
 .icoFooter img {
-    width: 20px;
+    width: 40px;
     opacity: 0.5;
 }
 
 .icoSend {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: none;
     background-color: #D4B3C0;
@@ -260,6 +259,10 @@ button {
 .icoSend img {
     width: 40px;
     filter: invert();
+}
+
+.main-body1 {
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
