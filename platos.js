@@ -24,6 +24,15 @@ let listaPlatos = [{
         id: 2,
         cantidad: 0,
         cat: "Fast Food"
+    },
+    {
+        nombre: "Producto 4",
+        descripcion: "Una bolsita para velitas bonitas.",
+        precio: 21.00,
+        img: "./Images/producto4.jpeg",
+        id: 3,
+        cantidad: 0,
+        cat: "Fast Food"
     }
 
 ];
