@@ -24,8 +24,7 @@ let sliderCat = "";
 function pintarCat() {
     for (let i = 0; i < listaCategorias.length; i++) {
         sliderCat += `<div id="contenedorCategorias" class="contenedorCategorias" onclick="filtrado(this)" data-numero="${listaCategorias[i].id}" style="border:none;">
-        <img class="contenedorCategoriasImg" src="${listaCategorias[i].img}" >
-        <p class = "textoCategorias">${listaCategorias[i].nombre}</p>
+        <div class="container-img"><img class="contenedorCategoriasImg" src="${listaCategorias[i].img}"></div>
     </div>`
     }
 }
