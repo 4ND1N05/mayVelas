@@ -85,7 +85,7 @@ nav {
     height: 150px;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 1px 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 8px 8px rgba(0, 0, 0, 0.1);
     margin: 5px;
     display: inline-grid;
     cursor: pointer;
@@ -99,7 +99,7 @@ nav {
     height: 155px;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 5px 9px 19px #D4B3C0;
+    box-shadow: 1px 3px 9px 9px #D4B3C0;
     margin: 5px;
     display: inline-grid;
     cursor: pointer;
