@@ -1,93 +1,39 @@
-let listaPlatos = [
-    {
-        nombre: "Plato 01",
-        descripcion: "With cheese sauce",
+let listaPlatos = [{
+        nombre: "Producto 1",
+        descripcion: "Una velita bonita",
         precio: 9.00,
-        img: "./Images/pollo.jpg",
+        img: "./Images/producto1.jpeg",
         id: 0,
         cantidad: 0,
         cat: "Dinner"
     },
     {
-        nombre: "Plato 02",
-        descripcion: "With basmati rice",
+        nombre: "Producto 2",
+        descripcion: "otra velita bonita",
         precio: 23.00,
-        img: "./Images/desayuno2.jpg",
+        img: "./Images/producto2.jpeg",
         id: 1,
         cantidad: 0,
         cat: "Breakfast"
     },
     {
-        nombre: "Plato 03",
-        descripcion: "With beef bacon",
+        nombre: "Producto 3",
+        descripcion: "Otra velita bonita más.",
         precio: 21.00,
-        img: "./Images/burgerfast.jpg",
+        img: "./Images/producto3.jpeg",
         id: 2,
         cantidad: 0,
         cat: "Fast Food"
-    },
-    {
-        nombre: "Plato 04",
-        descripcion: "With cheese sauce",
-        precio: 5.00,
-        img: "./Images/pizafast.jpg",
-        id: 3,
-        cantidad: 0,
-        cat: "Fast Food"
-    },
-    {
-        nombre: "Plato 05",
-        descripcion: "With vegetables",
-        precio: 3.50,
-        img: "./Images/DURmfast.jpg",
-        id: 4,
-        cantidad: 0,
-        cat: "Fast Food"
-    },
-    {
-        nombre: "Plato 06",
-        descripcion: "With eggs and toasts",
-        precio: 15.00,
-        img: "./Images/break1.jpg",
-        id: 5,
-        cantidad: 0,
-        cat: "Breakfast"
-    },
-    {
-        nombre: "Plato 07",
-        descripcion: "With strawberry sauce",
-        precio: 4.50,
-        img: "./Images/cheesecake.jpg",
-        id: 6,
-        cantidad: 0,
-        cat: "Postres"
-    },
-    {
-        nombre: "Plato 08",
-        descripcion: "Chardonnay",
-        precio: 3.50,
-        img: "./Images/vinoBlanco.jpg",
-        id: 7,
-        cantidad: 0,
-        cat: "Bebidas"
-    },
-    {
-        nombre: "Plato 09",
-        descripcion: "Merlot",
-        precio: 3.50,
-        img: "./Images/vinoTinto.jpg",
-        id: 8,
-        cantidad: 0,
-        cat: "Bebidas"
-    },
+    }
+
 ];
 
 
 
-function pintarMenu(){
-let dishes = "";
-    for (let i = 0; i < listaPlatos.length; i++){
-    dishes+= `<div class="infoPlatos ${listaPlatos[i].cat}" data-numero="${listaPlatos[i].id}">
+function pintarMenu() {
+    let dishes = "";
+    for (let i = 0; i < listaPlatos.length; i++) {
+        dishes += `<div class="infoPlatos ${listaPlatos[i].cat}" data-numero="${listaPlatos[i].id}">
     <img src="${listaPlatos[i].img}">
     <div class="infoDetalle">
         <p class="price">$${listaPlatos[i].precio}</p>
@@ -100,22 +46,21 @@ let dishes = "";
         </div>
     </div>
 </div>`
-}
+    }
 
-document.querySelector(".platos").innerHTML = dishes;
+    document.querySelector(".platos").innerHTML = dishes;
 
 }
 
 pintarMenu();
 
 
-function reinicio (){
+function reinicio() {
     pintarMenu();
-    
+
     let categorias = document.querySelectorAll(".contenedorCategorias")
     let textoCategoria = document.querySelectorAll(".textoCategorias")
 
     categorias.forEach(cat => cat.classList.remove('contenedorCategoriasClick'))
     textoCategoria.forEach(txt => txt.classList.remove('textoCategoriasClick'))
 }
-
