@@ -26,6 +26,7 @@ header {
 .contenedorLogo {
     display: flex;
     justify-content: center;
+    height: auto;
 }
 
 main {
