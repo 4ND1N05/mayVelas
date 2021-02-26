@@ -23,6 +23,11 @@ header {
     justify-content: center;
 }
 
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+}
+
 main {
     background-color: #FFFFFF;
 }
