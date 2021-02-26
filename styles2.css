@@ -33,11 +33,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
+    width: 10px;
     height: auto;
     border: none;
     background-color: #F0F0F2;
     border-radius: 2px;
+    margin-left: 20px;
+}
+
+.return {
+    width: 40px;
 }
 
 .flech {
@@ -53,6 +58,7 @@ header {
     height: 40px;
     border: none;
     background-color: transparent;
+    margin-right: 20px;
 }
 
 .basura {
