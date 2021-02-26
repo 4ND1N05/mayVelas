@@ -34,7 +34,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40px;
+    height: auto;
     border: none;
     background-color: #F0F0F2;
     border-radius: 2px;
