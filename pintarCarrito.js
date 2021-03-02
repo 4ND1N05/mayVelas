@@ -22,15 +22,15 @@ function pintarCarrito() {
 }
 
 function sumar(elemento) {
-    let padre = elemento.parentElement
-    let textoContador = padre.querySelector("p")
-    let bisabuela = padre.parentElement.parentElement
-    let bisabuelaId = bisabuela.dataset.numero
-    let index = carrito.find(element => element.id == bisabuelaId)
-    let indexNumber = carrito.indexOf(index)
-    let aumentarCantidad = carrito[indexNumber].cantidad
-    aumentarCantidad++
-    textoContador.innerHTML = aumentarCantidad
+    let padre = elemento.parentElement;
+    let textoContador = padre.querySelector("p");
+    let bisabuela = padre.parentElement.parentElement;
+    let bisabuelaId = bisabuela.dataset.numero;
+    let index = carrito.find(element => element.id == bisabuelaId);
+    let indexNumber = carrito.indexOf(index);
+    let aumentarCantidad = carrito[indexNumber].cantidad;
+    aumentarCantidad++;
+    textoContador.innerHTML = aumentarCantidad;
 
     carrito[indexNumber].cantidad = aumentarCantidad;
 
@@ -40,23 +40,23 @@ function sumar(elemento) {
 function restar(elemento) {
     let padre = elemento.parentElement;
     let textoContador = padre.querySelector('p');
-    let bisabuela = padre.parentElement.parentElement
-    let bisabuelaId = bisabuela.dataset.numero
-    let index = carrito.find(element => element.id == bisabuelaId)
-    let indexNumber = carrito.indexOf(index)
-    let disminuirCantidad = carrito[indexNumber].cantidad
+    let bisabuela = padre.parentElement.parentElement;
+    let bisabuelaId = bisabuela.dataset.numero;
+    let index = carrito.find(element => element.id == bisabuelaId);
+    let indexNumber = carrito.indexOf(index);
+    let disminuirCantidad = carrito[indexNumber].cantidad;
 
     if (disminuirCantidad > 0) {
         disminuirCantidad--;
     }
 
-    textoContador.innerHTML = disminuirCantidad
+    textoContador.innerHTML = disminuirCantidad;
 
     carrito[indexNumber].cantidad = disminuirCantidad;
 
 
     if (carrito[indexNumber].cantidad == 0) {
-        carrito.splice(indexNumber, 1)
+        carrito.splice(indexNumber, 1);
         bisabuela.innerHTML = "";
     }
     sumarSubtotal();
@@ -88,7 +88,7 @@ function vaciarArray() {
     carrito = [];
     document.querySelector(".platos2").innerHTML = "";
     console.log(carrito);
-    listaPlatos.forEach(item => item.cantidad = 0)
+    listaPlatos.forEach(item => item.cantidad = 0);
     document.querySelector(".subtotalPrecio").innerHTML = "0";
     document.querySelector(".impuestos").innerHTML = "0";
     document.querySelector(".totalPrecio").innerHTML = "0";
@@ -96,7 +96,7 @@ function vaciarArray() {
 
 function enviarPedido() {
     enviarMensaje();
-    let totalPrecio = document.querySelector(".totalPrecio").innerHTML
+    let totalPrecio = document.querySelector(".totalPrecio").innerHTML;
     let nombre = document.getElementById("nombre").value;
     let direccion = document.getElementById("direccion").value;
     let comentario = document.getElementById("comentario").value;
