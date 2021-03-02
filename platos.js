@@ -72,4 +72,5 @@ function reinicio() {
 
     categorias.forEach(cat => cat.classList.remove('contenedorCategoriasClick'))
     textoCategoria.forEach(txt => txt.classList.remove('textoCategoriasClick'))
+
 }

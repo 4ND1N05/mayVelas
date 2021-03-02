@@ -210,6 +210,71 @@ footer {
     position: sticky;
 }
 
+.cajaFormulario {
+    background: linear-gradient( rgba(212, 179, 192, 0.3), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    height: 120vw;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: 1.8px ridge rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#formID {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+}
+
+.txtForm {
+    padding-bottom: 12%;
+}
+
+input[type=text] {
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    width: 16rem;
+    height: 1.5rem;
+    padding-left: 5%;
+}
+
+input[type=text]::placeholder {
+    text-align: top;
+    color: #D4B3C0;
+}
+
+.commentForm {
+    height: 6rem;
+    width: 16rem;
+    border: none;
+    border-radius: 6px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+textarea::placeholder {
+    color: #D4B3C0;
+}
+
+.btnForm {
+    background-color: #D4B3C0;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    width: 6rem;
+    height: 2.5rem;
+    filter: drop-shadow(2px 2px 6px white);
+}
+
 @media screen and (min-width:768px) {
     .image {
         width: 250px;

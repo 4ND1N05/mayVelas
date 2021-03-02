@@ -23,7 +23,7 @@
         </main>
 
         <footer class="footer-body1">
-            <button class="icoFooter" onclick="reinicio()"><img src="./Images/home.svg"></button>
+            <button class="icoFooter" onclick="reinicio()"><img class="homeSeleccionado" src="./Images/home.svg"></button>
             <button class="icoSend" onclick="enviarCarrito()" alt="Iconos diseñados por Darius Dan"><img src="./Images/cart.svg"></button>
             <a href="https://www.instagram.com/may_velas/" target="_blank"><button class="icoFooter" ><img src="./Images/IG.svg"></button></a>
 
@@ -46,6 +46,18 @@
             <div class="platos2"></div>
         </main>
 
+        <div class="cajaFormulario" style="display: none;">
+            <form id="formID" method="get">
+                <p class="txtForm"><input type="text" name="nombre" placeholder="Nombres y apellidos" id="nombre"></p>
+                <p class="txtForm"><input type="text" name="mail" placeholder="Mail"></p>
+                <p class="txtForm"><input type="text" name="direccion" placeholder="Dirección de envío" id="direccion"></p>
+                <p class="txtForm"><textarea class="commentForm" type="text" name="comentarios" placeholder="Comentarios adicionales" id="comentario"></textarea></p>
+                <p>
+                    <input class="btnForm" type="submit" value="Enviar" onclick="enviarPedido()">&nbsp; &nbsp; &nbsp;
+                    <input class="btnForm" type="reset" value="Cancelar" onclick="cancelarPedido()">
+                </p>
+            </form>
+        </div>
         <footer class="footerCarrito">
             <div class="total">
                 <div class="text">
@@ -62,7 +74,7 @@
                     <p class="totalPrecio">0</p>
                 </div>
 
-                <button class="envio" onclick="enviarPedido()">Enviar pedido</button>
+                <button class="envio" onclick="continuarPedido()">Continuar Compra</button>
 
             </div>
         </footer>
