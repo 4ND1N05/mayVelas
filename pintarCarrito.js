@@ -5,18 +5,21 @@ function pintarCarrito() {
     let dishes2 = "";
     for (let i = 0; i < carrito.length; i++) {
         dishes2 += `<div class="infoPlatos ${carrito[i].cat}" data-numero="${carrito[i].id}">
-        <img src="${carrito[i].img}">
-        <div class="infoDetalle">
-            <p class="price">$${carrito[i].precio}</p>
-            <h4>${carrito[i].nombre}</h4>
-            <p>${carrito[i].descripcion}</p>
-            <div class="counter">
-                <button class="counterLeft" onclick="restar(this)">-</button>
-                <p id="visor">${carrito[i].cantidad}</p>
-                <button class="counterRight" onClick="sumar(this)">+</button>
-            </div>
+        <div class="contenedorImagenProductos">
+    <h4 class="nombreProducto">${listaPlatos[i].nombre}</h4>
+    <img src="${listaPlatos[i].img}"></div>
+    <div class="infoDetalle">
+        <p class="price">$${listaPlatos[i].precio}</p>  
+        <p class= "descripciones">${listaPlatos[i].descripcion}</p>
+        <p class= "descripciones">${listaPlatos[i].descripcion2}</p>
+        <p class= "descripciones">${listaPlatos[i].descripcion3}</p>
+        <div class="counter">
+            <button class="counterLeft" onclick="disminuir(this)">-</button>
+            <p id="visor">${listaPlatos[i].cantidad}</p>
+            <button class="counterRight" onClick="aumentar(this)">+</button>
         </div>
-    </div>`
+    </div>
+</div>`
     }
     document.querySelector(".platos2").innerHTML = dishes2;
 }

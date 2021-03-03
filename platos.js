@@ -1,34 +1,36 @@
 let listaPlatos = [{
-        nombre: "Producto 1",
-        descripcion: "Una velita bonita",
-        precio: 9.00,
-        img: "./Images/producto1.jpeg",
+        nombre: "Vela 1",
+        descripcion: "- 345 gr aproximados de cera de soya, cera vegetal ecológica.",
+        descripcion2: "- Apta para masajes.",
+        descripcion3: "- Envase de vidrio.",
+        precio: 45000,
+        img: "./Images/vela1.jpg",
         id: 0,
         cantidad: 0,
         cat: "Dinner"
     },
     {
-        nombre: "Producto 2",
-        descripcion: "otra velita bonita",
-        precio: 23.00,
-        img: "./Images/producto2.jpeg",
+        nombre: "Vela 2",
+        descripcion: "285 gr aproximados de de cera de soya, cera vegetal ecológica",
+        precio: 40000,
+        img: "./Images/vela2.jpg",
         id: 1,
         cantidad: 0,
         cat: "Breakfast"
     },
     {
-        nombre: "Producto 3",
-        descripcion: "Otra velita bonita más.",
-        precio: 21.00,
-        img: "./Images/producto3.jpeg",
+        nombre: "Vela 3",
+        descripcion: "44 gr aproximados de de cera de soya, cera vegetal ecológica",
+        precio: 18000,
+        img: "./Images/vela3.jpg",
         id: 2,
         cantidad: 0,
         cat: "Fast Food"
     },
     {
-        nombre: "Producto 4",
+        nombre: "Bolsa",
         descripcion: "Una bolsita para velitas bonitas.",
-        precio: 21.00,
+        precio: 5000,
         img: "./Images/producto4.jpeg",
         id: 3,
         cantidad: 0,
@@ -43,11 +45,14 @@ function pintarMenu() {
     let dishes = "";
     for (let i = 0; i < listaPlatos.length; i++) {
         dishes += `<div class="infoPlatos ${listaPlatos[i].cat}" data-numero="${listaPlatos[i].id}">
-    <img src="${listaPlatos[i].img}">
+    <div class="contenedorImagenProductos">
+    <h4 class="nombreProducto">${listaPlatos[i].nombre}</h4>
+    <img src="${listaPlatos[i].img}"></div>
     <div class="infoDetalle">
-        <p class="price">$${listaPlatos[i].precio}</p>
-        <h4>${listaPlatos[i].nombre}</h4>
-        <p>${listaPlatos[i].descripcion}</p>
+        <p class="price">$${listaPlatos[i].precio}</p>  
+        <p class= "descripciones">${listaPlatos[i].descripcion}</p>
+        <p class= "descripciones">${listaPlatos[i].descripcion2}</p>
+        <p class= "descripciones">${listaPlatos[i].descripcion3}</p>
         <div class="counter">
             <button class="counterLeft" onclick="disminuir(this)">-</button>
             <p id="visor">${listaPlatos[i].cantidad}</p>

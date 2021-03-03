@@ -95,61 +95,24 @@ h3 {
     margin-top: 20px;
 }
 
+.contenedorImagenProductos {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nombreProducto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .image {
     width: 118px;
     height: 123px;
     border-radius: 18px;
     object-fit: cover;
     cursor: pointer;
-}
-
-.infoDetalle {
-    margin-left: 7%;
-}
-
-.infoDetalle p {
-    margin: 6px;
-}
-
-h4 {
-    margin: 4px;
-}
-
-.counter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 6px;
-}
-
-.counter button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: white;
-    color: #C9CACE;
-    margin: 0px;
-    padding: 0px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.counterLeft {
-    border-radius: 2px 0px 0px 2px;
-}
-
-.counterRight {
-    border-radius: 0px 2px 2px 0px;
-}
-
-.counter p {
-    width: 30px;
-    height: 30px;
-    background-color: #F0F0F2;
-    color: black;
-    margin: 0px;
-    text-align: center;
-    line-height: 28px;
 }
 
 footer {

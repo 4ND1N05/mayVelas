@@ -148,6 +148,7 @@ nav {
 .price {
     color: #D4B3C0;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .platos {
@@ -174,6 +175,13 @@ nav {
     cursor: pointer;
 }
 
+.contenedorImagenProductos {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .infoDetalle {
     margin-left: 7%;
 }
@@ -186,23 +194,31 @@ h4 {
     margin: 4px;
 }
 
+.nombreProducto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
 .counter {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-left: 6px;
+    margin-top: 10px;
 }
 
 .counter button {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border: none;
-    background-color: white;
-    color: #c9cace;
+    background-color: #D4B3C0;
+    color: black;
     margin: 0px;
     padding: 0px;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .counterLeft {
@@ -216,11 +232,17 @@ h4 {
 .counter p {
     width: 30px;
     height: 30px;
-    background-color: #f0f0f2;
     color: black;
     margin: 0px;
     text-align: center;
     line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripciones {
+    color: #b3b3b3;
 }
 
 footer {
