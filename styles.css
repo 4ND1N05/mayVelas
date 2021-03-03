@@ -78,7 +78,6 @@ nav {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    padding: 10px 0;
     top: 0%;
     background-color: #FFFFFF;
 }
@@ -296,7 +295,7 @@ button {
 }
 
 .main-body1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
