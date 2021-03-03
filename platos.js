@@ -3,11 +3,11 @@ let listaPlatos = [{
         descripcion: "- 345 gr aproximados de cera de soya, cera vegetal ecológica.",
         descripcion2: "- Apta para masajes.",
         descripcion3: "- Envase de vidrio.",
-        precio: 45000,
+        precio: 45,
         img: "./Images/vela1.jpg",
         id: 0,
         cantidad: 0,
-        cat: "Dinner"
+        cat: "Productos"
     },
     {
         nombre: "Vela 2",
@@ -18,7 +18,7 @@ let listaPlatos = [{
         img: "./Images/vela2.jpg",
         id: 1,
         cantidad: 0,
-        cat: "Breakfast"
+        cat: "Productos"
     },
     {
         nombre: "Vela 3",
@@ -29,7 +29,7 @@ let listaPlatos = [{
         img: "./Images/vela3.jpg",
         id: 2,
         cantidad: 0,
-        cat: "Fast Food"
+        cat: "Productos"
     },
     {
         nombre: "Bolsa",
@@ -38,7 +38,7 @@ let listaPlatos = [{
         img: "./Images/producto4.jpeg",
         id: 3,
         cantidad: 0,
-        cat: "Fast Food"
+        cat: "Productos"
     }
 
 ];
@@ -53,7 +53,7 @@ function pintarMenu() {
     <h4 class="nombreProducto">${listaPlatos[i].nombre}</h4>
     <img src="${listaPlatos[i].img}"></div>
     <div class="infoDetalle">
-        <p class="price">$${listaPlatos[i].precio}</p>  
+        <p class="price">$${listaPlatos[i].precio} K</p>  
         <p class= "descripciones">${listaPlatos[i].descripcion}</p>
         <p class= "descripciones">${listaPlatos[i].descripcion2}</p>
         <p class= "descripciones">${listaPlatos[i].descripcion3}</p>
