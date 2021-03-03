@@ -12,6 +12,8 @@ let listaPlatos = [{
     {
         nombre: "Vela 2",
         descripcion: "285 gr aproximados de de cera de soya, cera vegetal ecológica",
+        descripcion2: "- Apta para masajes.",
+        descripcion3: "- Envase de cerámica blanca.",
         precio: 40000,
         img: "./Images/vela2.jpg",
         id: 1,
@@ -21,6 +23,8 @@ let listaPlatos = [{
     {
         nombre: "Vela 3",
         descripcion: "44 gr aproximados de de cera de soya, cera vegetal ecológica",
+        descripcion2: "- Apta para masajes.",
+        descripcion3: "- Maceta de cemento.",
         precio: 18000,
         img: "./Images/vela3.jpg",
         id: 2,
