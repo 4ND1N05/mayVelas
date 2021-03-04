@@ -14,7 +14,7 @@ let listaPlatos = [{
         descripcion: "285 gr aproximados de de cera de soya, cera vegetal ecológica",
         descripcion2: "- Apta para masajes.",
         descripcion3: "- Envase de cerámica blanca.",
-        precio: 40000,
+        precio: 40,
         img: "./Images/vela2.jpg",
         id: 1,
         cantidad: 0,
@@ -25,21 +25,13 @@ let listaPlatos = [{
         descripcion: "44 gr aproximados de de cera de soya, cera vegetal ecológica",
         descripcion2: "- Apta para masajes.",
         descripcion3: "- Maceta de cemento.",
-        precio: 18000,
+        precio: 18,
         img: "./Images/vela3.jpg",
         id: 2,
         cantidad: 0,
         cat: "Productos"
     },
-    {
-        nombre: "Bolsa",
-        descripcion: "Una bolsita para velitas bonitas.",
-        precio: 5000,
-        img: "./Images/producto4.jpeg",
-        id: 3,
-        cantidad: 0,
-        cat: "Productos"
-    }
+
 
 ];
 
