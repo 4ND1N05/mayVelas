@@ -103,9 +103,8 @@ function enviarPedido() {
     let nombre = document.getElementById("nombre").value;
     let direccion = document.getElementById("direccion").value;
     let comentario = document.getElementById("comentario").value;
-    window.location.href = "https://api.whatsapp.com/send/?phone=" + numeroEmpresa + "&text=" + "Nombre: " + nombre + " - " + pedido + "Precio total =" + totalPrecio + " - " + "Dirección: " + direccion + " - " + "Comentario: " + comentario + "&app_absent=0";
-    retorno();
-    location.reload();
+    window.open("https://api.whatsapp.com/send?phone=" + numeroEmpresa + "&text=" + "Nombre: " + nombre + " - " + pedido + "Precio total =" + totalPrecio + " - " + "Dirección: " + direccion + " - " + "Comentario: " + comentario);
+
 }
 
 function enviarMensaje() {
