@@ -1,3 +1,4 @@
+let home = document.querySelector(".icoFooterHome .homeSeleccionado");
 let listaPlatos = [{
         nombre: "Vela 1",
         descripcion: "- 345 gr aproximados de cera de soya, cera vegetal ecológica.",
@@ -7,11 +8,11 @@ let listaPlatos = [{
         img: "./Images/vela1.jpg",
         id: 0,
         cantidad: 0,
-        cat: "Productos"
+        cat: "producto"
     },
     {
         nombre: "Vela 2",
-        descripcion: "285 gr aproximados de de cera de soya, cera vegetal ecológica",
+        descripcion: "- 285 gr aproximados de de cera de soya, cera vegetal ecológica",
         descripcion2: "- Apta para masajes.",
         descripcion3: "- Envase de cerámica blanca.",
         precio: 40,
@@ -22,7 +23,7 @@ let listaPlatos = [{
     },
     {
         nombre: "Vela 3",
-        descripcion: "44 gr aproximados de de cera de soya, cera vegetal ecológica",
+        descripcion: "- 44 gr aproximados de de cera de soya, cera vegetal ecológica",
         descripcion2: "- Apta para masajes.",
         descripcion3: "- Maceta de cemento.",
         precio: 18,

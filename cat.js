@@ -1,7 +1,7 @@
 let listaCategorias = [
 
     {
-        nombre: "Productos",
+        nombre: "producto",
         img: "./Images/categoria1.jpg",
         id: 0
     },
@@ -13,7 +13,7 @@ let listaCategorias = [
     },
 
     {
-        nombre: "Envío",
+        nombre: "envío",
         img: "./Images/categoria3.jpg",
         id: 2
     }

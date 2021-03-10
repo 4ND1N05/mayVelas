@@ -1,31 +1,33 @@
 function filtrado(categoria) {
-    categoriaTexto = categoria.querySelector("p").innerHTML;
-
-
+    let categoriaTexto = categoria.querySelector("p").innerHTML;
     let dishes = "";
 
     function pintarMenu() {
         for (let i = 0; i < listaPlatos.length; i++) {
             if (categoriaTexto === listaPlatos[i].cat) {
                 dishes += `<div class="infoPlatos ${listaPlatos[i].cat}" data-numero="${listaPlatos[i].id}">
-    <img src="${listaPlatos[i].img}">
-    <div class="infoDetalle">
-        <p class="price">$${listaPlatos[i].precio}</p>
-        <h4>${listaPlatos[i].nombre}</h4>
-        <p>${listaPlatos[i].descripcion}</p>
-        <div class="counter">
-            <button class="counterLeft" onClick="disminuir(this)">-</button>
-            <p id="visor">${listaPlatos[i].cantidad}</p>
-            <button class="counterRight" onClick="aumentar(this)">+</button>
+        <div class="contenedorImagenProductos">
+        <h4 class="nombreProducto">${listaPlatos[i].nombre}</h4>
+        <img src="${listaPlatos[i].img}"></div>
+        <div class="infoDetalle">
+            <p class="price">$${listaPlatos[i].precio} K</p>  
+            <p class= "descripciones">${listaPlatos[i].descripcion}</p>
+            <p class= "descripciones">${listaPlatos[i].descripcion2}</p>
+            <p class= "descripciones">${listaPlatos[i].descripcion3}</p>
+            <div class="counter">
+                <button class="counterLeft" onclick="disminuir(this)">-</button>
+                <p id="visor">${listaPlatos[i].cantidad}</p>
+                <button class="counterRight" onClick="aumentar(this)">+</button>
+            </div>
         </div>
-    </div>
-</div>`
+    </div>`
             }
         }
     }
 
     pintarMenu();
     document.querySelector(".platos").innerHTML = dishes;
+
 }
 
 
@@ -43,7 +45,6 @@ categorias.forEach(category => {
         this.childNodes[3].classList.add('textoCategoriasClick');
         imagenCategoria.forEach(img => img.classList.remove('contenedorCategoriasImgClick'));
         this.childNodes[1].classList.add('contenedorCategoriasImgClick');
-        home.classList.remove('homeSeleccionado');
 
     })
 })
