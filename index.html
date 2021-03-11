@@ -53,7 +53,11 @@
                 <p class="txtForm"><input type="text" name="direccion" placeholder="Dirección de envío" id="direccion"></p>
                 <p class="txtForm"><textarea class="commentForm" type="text" name="comentarios" placeholder="Dinos aquí tu frangancia" id="comentario"></textarea></p>
                 <p>
-                    <input class="btnForm" type="submit" value="Enviar" onclick="enviarPedido()">&nbsp; &nbsp; &nbsp;
+                    <a href="javascript:window.open('https://api.whatsapp.com/send/?phone=34662214099&text=_hola_mundo&app_absent=0' );">
+
+
+                        <input class="btnForm" type="submit" value="Enviar" onclick="enviarPedido()">&nbsp; &nbsp; &nbsp;
+                    </a>
                     <input class="btnForm" type="reset" value="Cancelar" onclick="cancelarPedido()">
                 </p>
             </form>
